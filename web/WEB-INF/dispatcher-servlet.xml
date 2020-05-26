@@ -14,7 +14,7 @@
     <mvc:annotation-driven/>
     <!-- Component 패키지 지정 -->
     <!--suppress SpringXmlModelInspection -->
-    <context:component-scan base-package="controller"/>
+    <context:component-scan base-package="com.junga.controller"/>
 
     <!-- 여기서 설정한 내용으로 view object의 이름이 결정된다. -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
