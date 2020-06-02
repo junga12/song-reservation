@@ -1,10 +1,11 @@
-package com.junga.reservation;
+package com.junga.reservation.service;
 
-import com.junga.domain.Song;
-import com.junga.service.ArtistService;
-import com.junga.service.ArtistServiceImpl;
-import com.junga.service.SongService;
-import com.junga.service.SongServiceImpl;
+import com.junga.song.vo.Song;
+import com.junga.reservation.vo.Reservation;
+import com.junga.artist.service.ArtistService;
+import com.junga.artist.service.ArtistServiceImpl;
+import com.junga.song.service.SongService;
+import com.junga.song.service.SongServiceImpl;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -35,7 +36,7 @@ public class ReservationServiceImpl implements ReservationService {
 
     @Override
     public void deleteReservation(int songId) {
-        reservations = reservations.stream()
+        reservations = reservations.stream() // songId에 해당하는 것 전부 제거
                 .filter(reservation -> reservation.getSongId() != songId)
                 .collect(Collectors.toList());
     }

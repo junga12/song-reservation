@@ -1,6 +1,8 @@
-package com.junga.service;
+package com.junga.song;
 
-import com.junga.domain.Song;
+import com.junga.song.service.SongService;
+import com.junga.song.service.SongServiceImpl;
+import com.junga.song.vo.Song;
 import org.junit.Before;
 import org.junit.Test;
 

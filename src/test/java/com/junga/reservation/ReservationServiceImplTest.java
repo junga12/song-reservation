@@ -1,8 +1,8 @@
 package com.junga.reservation;
 
-import com.junga.reservation.Reservation;
-import com.junga.reservation.ReservationService;
-import com.junga.reservation.ReservationServiceImpl;
+import com.junga.reservation.service.ReservationService;
+import com.junga.reservation.service.ReservationServiceImpl;
+import com.junga.reservation.vo.Reservation;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -41,7 +41,10 @@ public class ReservationServiceImplTest {
 
     @Test
     public void deleteReservation() {
-        addReservation();
+        reservationService.addReservation(1);
+        reservationService.addReservation(1);
+        reservationService.addReservation(2);
+        reservationService.addReservation(3);
         reservationService.deleteReservation(1);
         List<Reservation> reservations = reservationService.getReservationList();
         assertEquals(reservations.size(), 1);

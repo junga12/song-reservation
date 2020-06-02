@@ -1,4 +1,4 @@
-package com.junga.reservation;
+package com.junga.reservation.vo;
 
 public class Reservation {
 

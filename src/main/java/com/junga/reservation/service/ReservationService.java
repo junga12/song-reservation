@@ -1,4 +1,6 @@
-package com.junga.reservation;
+package com.junga.reservation.service;
+
+import com.junga.reservation.vo.Reservation;
 
 import java.util.List;
 

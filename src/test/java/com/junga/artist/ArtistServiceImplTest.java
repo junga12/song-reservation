@@ -1,6 +1,8 @@
-package com.junga.service;
+package com.junga.artist;
 
-import com.junga.domain.Artist;
+import com.junga.artist.service.ArtistService;
+import com.junga.artist.service.ArtistServiceImpl;
+import com.junga.artist.vo.Artist;
 import org.junit.Before;
 import org.junit.Test;
 
